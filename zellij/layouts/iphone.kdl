@@ -1,0 +1,11 @@
+// Layout for Termius on iPhone (remote WSL)
+// Portrait:  ~65 cols × 22 lines with extra keyboard
+// Landscape: ~120 cols × 18 lines
+// Usage: zellij -s iphone --layout iphone
+
+layout {
+    pane size=1 borderless=true {
+        plugin location="zellij:compact-bar"
+    }
+    pane focus=true borderless=true
+}

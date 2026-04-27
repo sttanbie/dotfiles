@@ -1,0 +1,10 @@
+// Minimal dev layout — shell + logs + claude
+layout {
+    pane split_direction="vertical" {
+        pane split_direction="horizontal" size="60%" {
+            pane name="shell" size="70%"
+            pane name="logs" size="30%"
+        }
+        pane name="claude" size="40%"
+    }
+}

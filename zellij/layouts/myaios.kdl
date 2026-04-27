@@ -1,0 +1,77 @@
+// MyAIOS workspace — 3 tabs: MYAIOS, Projetos, Sandbox
+// Each tab: Claude CLI + Codex CLI + terminal pane
+
+layout {
+    default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        children
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+
+    tab name="MYAIOS" cwd="/mnt/d/Projetos/MyAIOS/" focus=true {
+        pane split_direction="vertical" {
+            pane split_direction="horizontal" {
+                pane {
+                    command "zsh"
+                    args "-c" "XDG_CONFIG_HOME=./.config claude"
+                    name "claude"
+                }
+                pane {
+                    command "zsh"
+                    args "-c" "XDG_CONFIG_HOME=./.config codex"
+                    name "codex"
+                }
+            }
+            pane {
+                name "terminal"
+                size "40%"
+            }
+        }
+    }
+
+    tab name="Projetos" cwd="/mnt/d/Projetos/04 Projetos" {
+        pane split_direction="vertical" {
+            pane split_direction="horizontal" {
+                pane {
+                    command "zsh"
+                    args "-c" "XDG_CONFIG_HOME=./.config claude"
+                    name "claude"
+                }
+                pane {
+                    command "zsh"
+                    args "-c" "XDG_CONFIG_HOME=./.config codex"
+                    name "codex"
+                }
+            }
+            pane {
+                name "terminal"
+                size "40%"
+            }
+        }
+    }
+
+    tab name="Sandbox" cwd="/mnt/d/Projetos/03 Sandbox" {
+        pane split_direction="vertical" {
+            pane split_direction="horizontal" {
+                pane {
+                    command "zsh"
+                    args "-c" "XDG_CONFIG_HOME=./.config claude"
+                    name "claude"
+                }
+                pane {
+                    command "zsh"
+                    args "-c" "XDG_CONFIG_HOME=./.config codex"
+                    name "codex"
+                }
+            }
+            pane {
+                name "terminal"
+                size "40%"
+            }
+        }
+    }
+}
