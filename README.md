@@ -34,3 +34,4 @@ ln -sf ~/dotfiles/wezterm/wezterm.lua ~/.config/wezterm/wezterm.lua
 ln -sf ~/dotfiles/zellij/config.kdl ~/.config/zellij/config.kdl
 ln -sf ~/dotfiles/zellij/layouts/*.kdl ~/.config/zellij/layouts/
 ```
+# Last sync: 2026-04-28T14:40:37Z
