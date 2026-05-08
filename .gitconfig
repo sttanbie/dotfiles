@@ -3,3 +3,9 @@
 	email = sttanbie@contato.es
 [init]
 	defaultBranch = main
+[alias]
+	pushfeed = "!f() { git push \"$@\" && ~/.claude/hooks/gitmon-feed-mirror.sh; }; f"
+[credential "https://github.com"]
+	helper = !/home/sttanbie/.local/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = !/home/sttanbie/.local/bin/gh auth git-credential
